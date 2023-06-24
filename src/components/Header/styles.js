@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.header`
+  grid-area: header;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,13 +11,15 @@ export const Container = styled.header`
   height: 116px;
 
   padding: 30px 123px;
-  border: 1px solid blue;
+
+  border-bottom: 1px solid;
+  border-bottom-color: ${({theme})=> theme.COLORS.BACKGROUND_700};
 `
 
 export const Logo = styled.div`
   color: ${({ theme }) => theme.COLORS.ROSE};
   font-size: 24px;
-  font-family: Roboto Slab;
+  font-family: 'Roboto Slab';
   font-weight: 700;
 `
 
