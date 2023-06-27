@@ -1,29 +1,31 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-
+export const Container = styled.button`
+  margin-bottom: 16px;
   width: 100%;
   padding: 32px;
 
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
-  color: ${({ theme }) => theme.COLORS.GRAY_300};
+  border: none;
   border-radius: 10px;
 
-  header > h3 {
-    color: ${({ theme }) => theme.COLORS.WHITE};
-
-    font-size: 24px;
-    font-family: 'Roboto Slab';
+  > h1 {
+    flex: 1;
+    text-align: left;
     font-weight: 700;
+    font-size: 24px;
+    color: ${({ theme }) => theme.COLORS.WHITE};
   }
 
-  div > p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 16px;
-    font-family: 'Roboto Slab';  
+  > p {
+    text-align: left;
+    color: ${({ theme }) => theme.COLORS.WHITE};
+  }
+
+  > footer {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
   }
 `

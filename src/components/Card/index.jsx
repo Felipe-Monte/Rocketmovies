@@ -1,15 +1,20 @@
 import { Container } from './styles'
 
-export function Card({title, text}) {
-  return(
-    <Container>
-      <header>
-        <h3>{title}</h3>
-      </header>
-      
-      <div>
-        <p>{text}</p>
-      </div>
+import { Tag } from '../Tag'
+
+export function Card({ data, ...rest }) {
+  return (
+    <Container {...rest}>
+      <h1>{data.title}</h1>
+      <p>{data.text}</p>
+      {
+        data.tags &&
+        <footer>
+          {
+            data.tags.map(tag => <Tag key={tag.id} title={tag.name} />)
+          }
+        </footer>
+      }
     </Container>
   )
 }
