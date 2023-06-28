@@ -17,6 +17,7 @@ export const Container = styled.div`
   }
 `
 export const UserImg = styled.div`
+  position: relative;
   margin: -100px auto;
   width: 200px;
   height: 200px;
@@ -25,6 +26,21 @@ export const UserImg = styled.div`
     width: 200px;
     height: 200px;
     border-radius: 50%;
+  }
+
+  > label {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+
+    > input {
+    display: none;
+    }
   }
 `
 

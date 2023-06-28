@@ -1,4 +1,4 @@
-import { Container, Form, UserImg } from './styles'
+import { Container, UserImg, Form } from './styles'
 
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
@@ -12,6 +12,10 @@ export function Profile() {
 
       <UserImg>
         <img src="https://github.com/Felipe-Monte.png" alt="Foto do usuário" />
+
+        <label htmlFor="avatar">
+          <input id='avatar' type="file" />
+        </label>
       </UserImg>
 
       <Form>
@@ -20,7 +24,7 @@ export function Profile() {
         <Input type='password' placeholder='Senha atual' />
         <Input type='password' placeholder='Nova senha' />
 
-        <Button title='Salvar'/>
+        <Button title='Salvar' />
       </Form>
     </Container>
   )
