@@ -24,16 +24,5 @@ export const Container = styled.div`
       font-family: 'Roboto Slab';
       font-weight: 500;
     }
-
-    > p {
-      margin-bottom: 20px;
-
-      color: ${({ theme }) => theme.COLORS.WHITE};
-
-      line-height: 22px;
-      text-align: justify;
-      font-size: 16px;
-      font-family: 'Roboto Slab';
-    }
   }
 `

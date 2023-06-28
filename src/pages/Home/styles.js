@@ -20,7 +20,7 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   gap: 40px;
-
+  
   > div {
     display: flex;
     justify-content: space-between;

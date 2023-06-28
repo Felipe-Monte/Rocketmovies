@@ -5,7 +5,7 @@ export const Container = styled.button`
   width: 100%;
   padding: 32px;
 
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_600};
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
   border: none;
   border-radius: 10px;
 
@@ -20,13 +20,15 @@ export const Container = styled.button`
   }
 
   > p {
+    margin-top: 20px;
     font-size: 16px;
     font-family: 'Roboto Slab';
     text-align: left;
     color: ${({ theme }) => theme.COLORS.WHITE};
+    text-align: justify;
   }
 
-  > footer {
+  > header {
     width: 100%;
     display: flex;
     gap: 10px;
