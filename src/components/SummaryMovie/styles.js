@@ -9,14 +9,21 @@ export const Container = styled.button`
   border: none;
   border-radius: 10px;
 
-  > h1 {
-    flex: 1;
+  div > h1 {
     text-align: left;
     font-weight: 700;
     font-size: 24px;
     color: ${({ theme }) => theme.COLORS.WHITE};
 
     margin-bottom: 20px;
+  }
+
+  .container-star {
+    display: flex;
+  }
+
+  .stars {
+    padding: 5px;
   }
 
   > p {
@@ -33,5 +40,13 @@ export const Container = styled.button`
     display: flex;
     gap: 10px;
     margin-top: 24px;
+  }
+
+  svg {
+    color: ${({ theme }) => theme.COLORS.ROSE};
+  }
+
+  svg:nth-child(5) {
+    color: black;
   }
 `

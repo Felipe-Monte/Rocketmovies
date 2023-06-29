@@ -19,6 +19,17 @@ export const Container = styled.button`
     margin-bottom: 20px;
   }
 
+  > div.container-star {
+    text-align: left;
+    margin-bottom: 20px;
+
+    > svg {
+    color: ${({ theme }) => theme.COLORS.ROSE};
+    }
+  }
+  
+  
+
   > p {
     font-size: 16px;
     font-family: 'Roboto Slab';

@@ -1,3 +1,4 @@
+
 import { Container } from './styles'
 
 import { Header } from '../../components/Header'
@@ -18,7 +19,6 @@ export function MoviePreview() {
 
         <SummaryMovie data={{
           title: 'Interestelar',
-
           tags: [
             { id: '1', name: 'Ficção cientifica' },
             { id: '2', name: 'Drama' },
