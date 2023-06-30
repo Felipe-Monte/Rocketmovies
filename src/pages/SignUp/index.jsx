@@ -1,4 +1,4 @@
-import {FiMail, FiLock} from 'react-icons/fi'
+import { FiMail, FiLock, FiUser } from 'react-icons/fi'
 import { Container, Form, Background } from './styles'
 
 import { Input } from '../../components/Input'
@@ -11,14 +11,15 @@ export function SignUp() {
         <h1>RocketMovies</h1>
         <p>Aplicação para acompanhar tudo que assistir.</p>
 
-        <h2>Faça seu login</h2>
+        <h2>Crie sua conta</h2>
 
-        <Input type='email' placeholder='E-mail' icon={FiMail}/>
-        <Input type='password' placeholder='Senha' icon={FiLock}/>
+        <Input type='text' placeholder='Nome' icon={FiUser} />
+        <Input type='email' placeholder='E-mail' icon={FiMail} />
+        <Input type='password' placeholder='Senha' icon={FiLock} />
 
-        <Button title='Entrar' />
+        <Button title='Cadastrar' />
 
-        <a href="#">Criar conta</a>
+        <a href="#">Voltar para login</a>
       </Form>
 
       <Background />
