@@ -1,5 +1,7 @@
 import { Container, UserImg, Form } from './styles'
 
+import { Link } from 'react-router-dom'
+
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
 
@@ -7,7 +9,9 @@ export function Profile() {
   return (
     <Container>
       <header>
-        <a href="#">Voltar</a>
+        <Link to='/'>
+          Voltar
+        </Link>
       </header>
 
       <UserImg>

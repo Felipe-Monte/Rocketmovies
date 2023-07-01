@@ -1,5 +1,7 @@
 import { Container, Content, InputArea, ButtonArea } from './styles'
 
+import { Link } from 'react-router-dom'
+
 import { Header } from '../../components/Header'
 import { Input } from '../../components/Input'
 import { Button } from '../../components/Button'
@@ -11,7 +13,10 @@ export function CreateMovie() {
 
       <main>
         <Content>
-          <a href="#">Voltar</a>
+          <Link to='/'>
+            Voltar
+          </Link>
+
           <h1>Novo filme</h1>
 
           <InputArea>
@@ -24,10 +29,10 @@ export function CreateMovie() {
             <textarea placeholder='Observações'></textarea>
           </InputArea>
 
-          
+
 
           <ButtonArea>
-            <Button title='Excluir filme'/>
+            <Button title='Excluir filme' />
 
             <Button title='Salvar alterações' />
           </ButtonArea>

@@ -16,7 +16,7 @@ export function Header() {
         />
       </Search>
 
-      <Profile>
+      <Profile to='/profile'>
         <div>
           <span>Carlos Felipe</span>
           <strong>Sair</strong>

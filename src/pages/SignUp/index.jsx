@@ -1,4 +1,5 @@
 import { FiMail, FiLock, FiUser } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 import { Container, Form, Background } from './styles'
 
 import { Input } from '../../components/Input'
@@ -19,7 +20,9 @@ export function SignUp() {
 
         <Button title='Cadastrar' />
 
-        <a href="#">Voltar para login</a>
+        <Link to='/'>
+          Voltar para login
+        </Link>
       </Form>
 
       <Background />

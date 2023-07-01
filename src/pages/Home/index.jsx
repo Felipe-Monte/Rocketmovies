@@ -1,4 +1,4 @@
-import { Container, Content, Section } from './styles'
+import { Container, Content, Section, ContainerButton } from './styles'
 
 import { Header } from '../../components/Header'
 import { Button } from '../../components/Button'
@@ -14,7 +14,9 @@ export function Home() {
           <Section>
             <div>
               <h1>Meus livros</h1>
-              <Button title='Adicionar filme' />
+              <ContainerButton to='/createMovie'>
+                <Button title='Adicionar filme' />
+              </ContainerButton>
             </div>
 
             <Card data={{
